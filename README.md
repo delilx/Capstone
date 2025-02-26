@@ -76,10 +76,10 @@ So as to take a position, I posit that focusing on minimizing the false negative
 
 Hence, this analysis focuses on identifying the classifier that maximizes recall, as well as presenting the one that maximizes the f1 score.
 
-##Baseline Classifier and Models Compared
+## Baseline Classifier and Models Compared
 A dummy classifier that predicts exclusively the majority class is used as baseline, and compared against simple and hyperparametrized versions of Logistic Regression, K Nearest Neighbors, Decision Tree, and Support Vector Machine.
 
-##Results
+## Results
 
 
 |Criterion      |Simple Model Winner      |Improved Model Winner | Notes |
@@ -101,6 +101,6 @@ It is also worth mentioning that the optimized decision tree classifier not only
 **Findings**: the resulting decision tree only tests the (standardized) credit score: any client whose credit score is more than 1.328 standard deviations below the average credit score is predicted to default on their credit card payment.
 This extremely simple model achieves 74.9\% precision and an f1 score of 85.65\%.
 
-###Worth exploring: Logistic Regression Model
+### Worth exploring: Logistic Regression Model
 The Jupyter notebook presents an additional discussion on the simple and hyperparametrized logistic regression models obtained with this dataset. While more complex than the decision tree, these produced solid recall and f1-score values, and they offer the possibility of expanding the understanding and interpretation of how each of the features in the dataset affect the target variable.
 
